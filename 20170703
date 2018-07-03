@@ -12,6 +12,16 @@
 - Python 실습 2 : Pythontutor. 소스 코드를 단계별로 실행하면서 작동 원리/오류 원인을 확인 가능. (http://www.pythontutor.com)
 
 ### 파이썬 문법
-- 대입 연산자(=) : 왼쪽은 변수, 오른쪽은 수식. literal, integer, floating도 수식임.
+- 대입문 : '변수 = 수식' 형식. '='는 대입 연산자임. literal, integer, floating도 수식임.
 - 키워드 : 언어 구현을 위해 개발 환경에서 기능이 예약된 문자열, 변수 이름으로 사용 불가
 - for 변수 in 리스트 : 반복문. 리스트로 정의된 조건의 한도 내에서 작동을 반복함.
+
+<=<=<=
+n = 0
+total = 0
+for i in range(100):
+    total = total + i
+    n = n + 1
+average = total / n
+print(average)
+<=<=<=
