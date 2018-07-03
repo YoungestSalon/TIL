@@ -9,4 +9,6 @@
     * 접착제 언어 : 다른 다양한 언어와 결합하여 사용 가능 (C, Java 등)
 - Scratch -> Python 실습 : Blockly (https://blockly-demo.appspot.com/static/demos/code/index.html)
 - Python 실습 : Google Colaboratory (https://colab.research.google.com/notebooks/welcome.ipynb#recent=true)
+- Python 실습 2 : Pythontutor. 코드를 단계별로 실행하면서 작동 원리/오류 원인을 확인 가능. (http://www.pythontutor.com)
+
 
