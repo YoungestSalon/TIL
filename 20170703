@@ -9,6 +9,9 @@
     * 접착제 언어 : 다른 다양한 언어와 결합하여 사용 가능 (C, Java 등)
 - Scratch -> Python 실습 : Blockly (https://blockly-demo.appspot.com/static/demos/code/index.html)
 - Python 실습 : Google Colaboratory (https://colab.research.google.com/notebooks/welcome.ipynb#recent=true)
-- Python 실습 2 : Pythontutor. 코드를 단계별로 실행하면서 작동 원리/오류 원인을 확인 가능. (http://www.pythontutor.com)
+- Python 실습 2 : Pythontutor. 소스 코드를 단계별로 실행하면서 작동 원리/오류 원인을 확인 가능. (http://www.pythontutor.com)
 
-
+### 파이썬 문법
+- 대입 연산자(=) : 왼쪽은 변수, 오른쪽은 수식. literal, integer, floating도 수식임.
+- 키워드 : 언어 구현을 위해 개발 환경에서 기능이 예약된 문자열, 변수 이름으로 사용 불가
+- for 변수 in 리스트 : 반복문. 리스트로 정의된 조건의 한도 내에서 작동을 반복함.
