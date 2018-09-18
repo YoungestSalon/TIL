@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sandbox</title>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- 데이터가 2개이니까 원도 2개를 그리고 -->
+    <svg width="400" height="400">
+      <circle cx="0" cy="0" fill="steelblue">
+      <circle cx="0" cy="0" fill="steelblue">
+    </svg>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>
+
+      // GDP에 따른 기대수명을 의미하는 데이터 2개를 입력해주고
+      var world = [
+        {"GDP": 100, "LEXP": 100},
+        {"GDP": 200, "LEXP": 120},
+      ];
+
+      // world라는 데이터와 d3를 mapping 해줍니다
+      d3.select("svg").selectAll("circle").data(world)
+
+        .transition()
+
+        // 원이 이동하는 속도를 조정. 단위는 1000 = 1초.
+        .duration(1000)
+
+        // 원이 바깥에서 날아 들어오는 것처럼 보이는 효과를 부여함.
+        .ease(d3.easeElastic)
+
+        // 반지름은 일단 고정된 상수값을 정해주고
+        .attr("r", 30)
+
+        // function(d) {return d["GDP"];}) 부분은 파이썬의 Lambda 함수와 동일한 원리임
+        .attr("cx", function(d) {return d["GDP"];})
+        .attr("cy", function(d) {return d["LEXP"];});
+
+    </script>
+
+  </body>
+</html>
